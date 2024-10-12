@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Trench";
+    src: url(trench/trench100.ttf);
+}
+
+body {
+    color: white;
+    background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secao--hero {
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660d9e60b52c66db2e67e0b4_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1.webp);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container--coluna {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.card {
+    font-size: 19px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: #050505;
+    box-shadow: 0 0 15px 5px #00a1ff;
+    padding: 30px 40px;
+    padding-top: 55px;
+    border-radius: 25px;
+    max-width: 50%;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 7.5px 0 #00a1ff;
+    border-radius: 100px;
+    padding: 5px 30px;
+}
+
+button {
+    background-color: #0068a5;
+    padding: 10px 30px;
+    color: inherit;
+    border-radius: 100px;
+    border: 3px solid #003655;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.passos,
+.temas {
+    font-size: 19px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.hexagono {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00a1ff;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagono--superior {
+    width: 90px;
+    left: 50%;
+    top: 0;
+}
+.hexagono--lateral {
+    width: 60px;
+    left: 0;
+    top: 50%;
+}
+
+.hexagono--intermediario {
+    width: 99%;
+    height: 99%;
+    background-color: #1d1a1b;
+}
+
+.hexagono--externo {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: auto;
+    aspect-ratio: 90/78;
+    filter: drop-shadow(0 0 5px #00a1ff);
+}
+
+.hexagono--interno {
+    width: 91.5%;
+    height: 91.5%;
+    background-color: #050505;
+}
+
+.hexagono img {
+    max-width: 50%;
+    display: block;
+    height: auto;
+}
+
+.hexagono--superior img {
+    max-width: 60%;
+    display: block;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+h3,
+button {
+    font-size: 23px;
+}
+
+.realce {
+    color: #00a1ff;
+}
+
+/* HERO */
+
+h1 {
+    font-family: "Trench", sans-serif;
+    text-align: center;
+    font-size: 49px;
+    line-height: 98%;
+}
+
+h1 .realce {
+    color: #00a1ff;
+}
+
+h1 .programacao {
+    font-size: 53px;
+}
+
+h1 .fullstack {
+    font-size: 78px;
+}
+
+.secao {
+    padding: 60px 20px;
+}
+
+.container--coluna {
+    flex-direction: column;
+}
+
+.subtitulo,
+.data,
+button {
+    font-size: 23px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    align-items: flex-start;
+    gap: 6.5px;
+}
+
+li,
+img {
+    margin-top: 2.5px;
+}
+
+button:hover {
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-top-width: 4px;
+    border-left-width: 4px;
+}
+
+.daniel {
+    max-width: 510px;
+}
+
+/* DISCLAIMER */
+
+.secao--disclaimer {
+    padding: 30px 20px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.552);
+}
+
+.disclaimer {
+    font-size: 15px;
+    color: #7c7f7f;
+}
+
+/* PASSOS */
+
+.passo {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    min-width: 5px;
+}
+
+.passo__cabecalho {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    min-width: 200px;
+}
+
+.passo__icone {
+    max-width: 53px;
+    background-color: #141213;
+    padding: 12.5px;
+    box-shadow: 0 0 7.5px 0 #00a1ff, inset 0 0 2.5px 0 #005080;
+    border: 3px solid #232427;
+    border-radius: 7.5px;
+}
+
+.passo__barra {
+    width: 5px;
+    background-color: #333;
+    align-self: stretch;
+}
+
+/* APRENDER */
+
+.secao--aprender {
+    background-color: #000618;
+}
+
+.tema {
+    position: relative;
+    display: flex;
+    background-color: #050505;
+    box-shadow: 0 0 10px 0px #00a1ff;
+    border-radius: 10px;
+    padding: 30px 60px;
+}
+
+/* SECAO QUEM */
+
+.secao--quem {
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660d9e60b52c66db2e67e0b4_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1.webp);
+    padding-bottom: 0;
+}
+
+.container--quem {
+    position: relative;
+}
+
+.card--quem {
+    max-width: 60%;
+    width: 100%;
+    margin-bottom: 70px;
+    padding-top: 30px;
+}
+
+.card__titulo {
+    font-weight: 500px;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.daniel-quem {
+    position: absolute;
+    max-width: 435px;
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 0);
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 40px;
+    box-shadow: 0 -15px 15px 0 rgba(0, 0, 0, 0.552);
+    z-index: 1;
+    position: relative;
+}
+
+.footer img {
+    max-width: 45px;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer__container {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    gap: 10px;
+}
+
+/* POPUP */
+
+.popup {
+    position: fixed;
+    display: none;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(7px);
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.popup--aberto .popup {
+    display: flex;
+}
+
+.popup__container {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    gap: 18px;
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+input {
+    padding: 10px 15px;
+    border-radius: 100px;
+    border: 2px solid #0068a5;
+    background-color: transparent;
+    font-size: 16px;
+    color: wheat;
+    outline: none;
+}
+
+.popup__botao--fechar {
+    position: absolute;
+    padding: 10px;
+    aspect-ratio: 1 / 1;
+    width: auto;
+    height: 54px;
+    top: 0px;
+    right: 0px;
+    transform: translate(50%, -50%);
+}
