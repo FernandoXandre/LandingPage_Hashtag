@@ -143,6 +143,7 @@ img {
 h2 {
     font-size: 42px;
     font-weight: 400;
+    text-align: center;
 }
 
 h3,
@@ -392,4 +393,87 @@ input {
     top: 0px;
     right: 0px;
     transform: translate(50%, -50%);
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1020px) {
+    h1 .realce {
+        font-size: 42px;
+    }
+
+    h1 .programacao {
+        font-size: 46px;
+    }
+
+    h1 .fullstack {
+        font-size: 68px;
+    }
+
+    .secao--hero,
+    .secao--quem {
+        background-image: url(../imagens/fundo_Mobile.webp);
+        padding-bottom: 0;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container--coluna {
+        margin-left: 25px;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 500px;
+        max-width: 100%;
+    }
+    .card--quem {
+        margin-bottom: 0;
+    }
+
+    .daniel-quem {
+        transform: none;
+        position: static;
+    }
+}
+@media (max-width: 770px) {
+    .passo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .passos,
+    .temas {
+        margin-top: 20px;
+        max-width: 500px;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+    }
+    .temas {
+        margin-left: 0;
+        gap: 40px;
+    }
+
+    .tema {
+        padding-top: 60px;
+    }
+
+    .passo {
+        flex-direction: column;
+    }
+
+    .passo__barra {
+        height: 2px;
+        width: 100%;
+    }
+
+    .hexagono--lateral {
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
 }
